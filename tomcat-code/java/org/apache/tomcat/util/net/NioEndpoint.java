@@ -424,7 +424,7 @@ public class NioEndpoint extends AbstractEndpoint<NioChannel> {
     }
 
 
-    /**
+    /**释放资源
      * Stop the endpoint. This will cause all processing threads to stop.
      */
     @Override

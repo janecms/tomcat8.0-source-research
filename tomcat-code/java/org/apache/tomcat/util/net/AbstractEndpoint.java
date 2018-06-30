@@ -574,7 +574,7 @@ public abstract class AbstractEndpoint<S> {
         executor = new ThreadPoolExecutor(getMinSpareThreads(), getMaxThreads(), 60, TimeUnit.SECONDS,taskqueue, tf);
         taskqueue.setParent( (ThreadPoolExecutor) executor);
     }
-
+    //关闭执行器
     public void shutdownExecutor() {
         if ( executor!=null && internalExecutor ) {
             if ( executor instanceof ThreadPoolExecutor ) {
@@ -599,7 +599,7 @@ public abstract class AbstractEndpoint<S> {
         }
     }
 
-    /**
+    /**使用虚假连接解锁服务器套接字接受
      * Unlock the server socket accept using a bogus connection.
      */
     protected void unlockAccept() {

@@ -731,7 +731,7 @@ public class CoyoteAdapter implements Adapter {
 
     // ------------------------------------------------------ Protected Methods
 
-    /**
+    /**在解析HTTP标头之后执行必要的处理，以便将请求/响应对传递到容器管道的起始处理。
      * Perform the necessary processing after the HTTP headers have been parsed
      * to enable the request/response pair to be passed to the start of the
      * container pipeline for processing.

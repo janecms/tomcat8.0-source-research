@@ -42,6 +42,7 @@ public class SessionConfig {
     }
 
     /**
+     * 确定用于提供的会话cookie的名称
      * Determine the name to use for the session cookie for the provided
      * context.
      * @param context
