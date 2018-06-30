@@ -769,7 +769,7 @@ public abstract class PersistentManagerBase extends ManagerBase
     }
 
 
-    /**
+    /**从Manager的活动会话列表中删除会话并将其写入Store。如果会话过期或无效，则此方法不起作用。<br/>
      * Remove the session from the Manager's list of active
      * sessions and write it out to the Store. If the session
      * is past its expiration or invalid, this method does

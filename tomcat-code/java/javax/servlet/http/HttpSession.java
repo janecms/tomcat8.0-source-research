@@ -263,7 +263,7 @@ public interface HttpSession {
     // Spec API does not use @Deprecated
     public void removeValue(String name);
 
-    /**
+    /**使该会话无效，然后解除与其绑定的任何对象的绑定。<br/>
      * Invalidates this session then unbinds any objects bound to it.
      *
      * @exception IllegalStateException

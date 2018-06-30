@@ -182,7 +182,7 @@ public class StandardManager extends ManagerBase {
     }
 
 
-    /**
+    /**将先前卸载的任何当前活动会话加载到适当的持久性机制（如果有）
      * Load any currently active sessions that were previously unloaded
      * to the appropriate persistence mechanism, if any.  If persistence is not
      * supported, this method returns without doing anything.

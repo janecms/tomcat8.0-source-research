@@ -25,7 +25,9 @@ import java.io.IOException;
  */
 public interface WriteListener extends java.util.EventListener{
 
-    /**
+    /**在没有阻塞的情况下可以写入数据时调用。
+     * 一旦数据被写入，容器将首次为请求调用此方法。仅当对ServletOutputStream.isReady（）的调用返回false并且此后才能编写数据时，
+     * 才会发生后续调用。
      * Invoked when it it possible to write data without blocking. The container
      * will invoke this method the first time for a request as soon as data can
      * be written. Subsequent invocations will only occur if a call to

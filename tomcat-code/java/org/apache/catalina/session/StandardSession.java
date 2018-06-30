@@ -908,7 +908,7 @@ public class StandardSession implements HttpSession, Session, Serializable {
     }
 
 
-    /**
+    /**执行钝化所需的内部处理
      * Perform the internal processing required to passivate
      * this session.
      */

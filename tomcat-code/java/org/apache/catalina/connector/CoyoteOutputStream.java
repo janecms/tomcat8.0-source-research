@@ -132,7 +132,7 @@ public class CoyoteOutputStream extends ServletOutputStream {
     }
 
 
-    /**
+    /**检查Coyote输出缓冲区（不是servlet输出缓冲区）中是否还有数据，如果是，则注册相关的套接字以进行写入，这样缓冲区就会被清空。
      * Checks to see if there is data left in the Coyote output buffers (NOT the
      * servlet output buffer) and if so registers the associated socket for
      * write so the buffers will be emptied. The container will take care of
