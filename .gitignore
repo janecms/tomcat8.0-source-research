@@ -20,6 +20,7 @@ output
 # Next line commented out, because test/webapp-virtual-library and
 # test/webapp-virtual-webapp use it:
 # target
+/**/*.class
 work
 build.properties
 mvn.properties
@@ -28,8 +29,12 @@ mvn.properties
 .fbprefs
 .project
 .settings
-.idea
+
 *.iml
+*.ipr
+*.iws
+.idea/
+
 *.asc
 *.jj
 *.tmp
@@ -41,3 +46,24 @@ java/org/apache/catalina/startup/catalina.properties
 modules/jdbc-pool/bin
 modules/jdbc-pool/includes
 webapps/docs/jdbc-pool.xml
+
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
