@@ -52,7 +52,7 @@ public class CatalinaProperties {
 
 
     /**
-     * Load properties.
+     * Load properties.(catalina.properties)
      */
     private static void loadProperties() {
 

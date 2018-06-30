@@ -676,7 +676,7 @@ public class NioEndpoint extends AbstractEndpoint<NioChannel> {
 
                     SocketChannel socket = null;
                     try {
-                        // Accept the next incoming connection from the server
+                        // Accept the next incoming connection from the server 通过ServerSocket监听Socket的方式来接收客户端请求的
                         // socket
                         socket = serverSock.accept();
                     } catch (IOException ioe) {

@@ -140,7 +140,9 @@ public final class Bootstrap {
 
     // -------------------------------------------------------- Private Methods
 
-
+    /**
+     * 初始化classLoaders:common,server,shared
+     */
     private void initClassLoaders() {
         try {
             commonLoader = createClassLoader("common", null);
@@ -252,7 +254,7 @@ public final class Bootstrap {
      * Initialize daemon.
      */
     public void init() throws Exception {
-
+        //初始化classLoaders:common,server,shared
         initClassLoaders();
 
         Thread.currentThread().setContextClassLoader(catalinaLoader);
