@@ -162,7 +162,7 @@ final class ApplicationFilterChain implements FilterChain, CometFilterChain {
     // ---------------------------------------------------- FilterChain Methods
 
 
-    /**
+    /**调用此链中的下一个过滤器，传递指定的请求和响应。如果此链中没有更多过滤器，请调用servlet本身的service（）方法。
      * Invoke the next filter in this chain, passing the specified request
      * and response.  If there are no more filters in this chain, invoke
      * the <code>service()</code> method of the servlet itself.

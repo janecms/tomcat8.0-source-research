@@ -92,7 +92,7 @@ final class StandardHostValve extends ValveBase {
 
     // --------------------------------------------------------- Public Methods
 
-    /**
+    /**根据指定的请求URI，选择适当的子上下文来处理此请求。如果找不到匹配的上下文，则返回适当的HTTP错误。
      * Select the appropriate child Context to process this request,
      * based on the specified request URI.  If no matching Context can
      * be found, return an appropriate HTTP error.

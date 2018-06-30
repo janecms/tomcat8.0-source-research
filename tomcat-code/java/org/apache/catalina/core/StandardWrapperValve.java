@@ -80,7 +80,7 @@ final class StandardWrapperValve
     // --------------------------------------------------------- Public Methods
 
 
-    /**
+    /**调用我们正在管理的servlet，尊重有关servlet生命周期和SingleThreadModel支持的规则。
      * Invoke the servlet we are managing, respecting the rules regarding
      * servlet lifecycle and SingleThreadModel support.
      *

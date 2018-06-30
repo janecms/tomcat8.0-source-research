@@ -671,7 +671,7 @@ public class DefaultServlet extends HttpServlet {
     }
 
 
-    /**
+    /** 默认servlet
      * Serve the specified resource, optionally including the data content.
      *
      * @param request  The servlet request we are processing

@@ -325,7 +325,7 @@ public class NioEndpoint extends AbstractEndpoint<NioChannel> {
     // ----------------------------------------------- Public Lifecycle Methods
 
 
-    /**
+    /**绑定服务端口
      * Initialize the endpoint.
      */
     @Override

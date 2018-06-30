@@ -448,7 +448,7 @@ public class StandardService extends LifecycleMBeanBase implements Service {
 
 
         mapperListener.start();
-
+        //启动connector
         // Start our defined Connectors second
         synchronized (connectorsLock) {
             for (Connector connector: connectors) {

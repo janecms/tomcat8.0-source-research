@@ -56,7 +56,7 @@ final class StandardEngineValve extends ValveBase {
 
     // --------------------------------------------------------- Public Methods
 
-    /**
+    /**根据请求的服务器名称，选择适当的子主机来处理此请求。如果找不到匹配的主机，则返回适当的HTTP错误。
      * Select the appropriate child Host to process this request,
      * based on the requested server name.  If no matching Host can
      * be found, return an appropriate HTTP error.
