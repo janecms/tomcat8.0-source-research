@@ -471,7 +471,8 @@ public class Catalina {
     }
 
 
-    /**
+    /** fixme  Digester类按照预定的规则解析server.xml，元素转化为对象，包括构造对象，set属性到对象字段，同时维护相互关联关系
+     * fixme 调用Server.init()方法，这其中会一连串的发布事件病调用各个service.init()方法，完成各个组件的初始化
      * Start a new server instance.
      */
     public void load() {
@@ -563,7 +564,7 @@ public class Catalina {
                 // Ignore
             }
         }
-
+    // fixme server关联catalina，在解析server.xml过程中，会发现父子元素对应实例的相互关联性(双向性)
         getServer().setCatalina(this);
         getServer().setCatalinaHome(Bootstrap.getCatalinaHomeFile());
         getServer().setCatalinaBase(Bootstrap.getCatalinaBaseFile());
@@ -572,7 +573,7 @@ public class Catalina {
         initStreams();
 
         // Start the new server
-        try {
+        try {// FIXME:  调用各个组件的init方法，初始化各个组件
             getServer().init();
         } catch (LifecycleException e) {
             if (Boolean.getBoolean("org.apache.catalina.startup.EXIT_ON_INIT_FAILURE")) {
@@ -654,7 +655,7 @@ public class Catalina {
                         false);
             }
         }
-
+// FIXME 创建一个带有port和ip address的ServerSocket，等待请求的到来：serverSocket.accept()方法阻塞，直到请求的到来
         if (await) {
             await();
             stop();

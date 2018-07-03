@@ -403,6 +403,7 @@ public class NioEndpoint extends AbstractEndpoint<NioChannel> {
                     socketProperties.getBufferPool());
 
             // Create worker collection
+            //fixme  根据MinSpareThreads、MaxThreads属性创建默认的ThreadPoolExecutor
             if ( getExecutor() == null ) {
                 createExecutor();
             }
@@ -418,7 +419,7 @@ public class NioEndpoint extends AbstractEndpoint<NioChannel> {
                 pollerThread.setDaemon(true);
                 pollerThread.start();
             }
-
+            // FIXME: 创建n个Acceptor用于接收客户端请求
             startAcceptorThreads();
         }
     }

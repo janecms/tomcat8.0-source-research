@@ -453,7 +453,7 @@ public abstract class AbstractProtocol<S> implements ProtocolHandler,
         String endpointName = getName();
         endpoint.setName(endpointName.substring(1, endpointName.length()-1));
 
-        try {
+        try {//fixme NioEndpoint
             endpoint.init();
         } catch (Exception ex) {
             getLog().error(sm.getString("abstractProtocolHandler.initError",

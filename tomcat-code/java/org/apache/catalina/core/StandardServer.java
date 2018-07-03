@@ -392,6 +392,7 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
      * This keeps the main thread alive - the thread pool listening for http
      * connections is daemon threads.
      */
+    // FIXME: 等待请求的到来
     @Override
     public void await() {
         // Negative values - don't wait on port - tomcat is embedded or we just don't like ports
@@ -795,7 +796,7 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
         stopAwait();
     }
 
-    /**
+    /** fixme 1. 注册mbean ,调用service.init()方法
      * Invoke a pre-startup initialization. This is used to allow connectors
      * to bind to restricted ports under Unix operating environments.
      */

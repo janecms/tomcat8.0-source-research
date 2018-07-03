@@ -566,7 +566,7 @@ public abstract class AbstractEndpoint<S> {
         return paused;
     }
 
-
+    //FIXME 此值为server.xml的connector元素的属性MaxThreads值，默认200
     public void createExecutor() {
         internalExecutor = true;
         TaskQueue taskqueue = new TaskQueue();
@@ -734,6 +734,7 @@ public abstract class AbstractEndpoint<S> {
     public final void init() throws Exception {
         testServerCipherSuitesOrderSupport();
         if (bindOnInit) {
+            //fixme 设置线程数、网络连接数
             bind();
             bindState = BindState.BOUND_ON_INIT;
         }

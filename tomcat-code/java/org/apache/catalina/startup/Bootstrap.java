@@ -250,7 +250,8 @@ public final class Bootstrap {
     }
 
 
-    /**
+    /**fixme 设置catalinahome和catalinbase
+     * fixme 实例化**ClassLoaders
      * Initialize daemon.
      */
     public void init() throws Exception {
@@ -342,7 +343,7 @@ public final class Bootstrap {
     }
 
 
-    /**
+    /** FIXME 通过反射调用Catalina.start()
      * Start the Catalina daemon.
      */
     public void start()
@@ -456,6 +457,7 @@ public final class Bootstrap {
             // Don't set daemon until init() has completed
             Bootstrap bootstrap = new Bootstrap();
             try {
+                ////set一些系统属性、初始化classLoader和Catalina.setParentClassLoader()
                 bootstrap.init();
             } catch (Throwable t) {
                 handleThrowable(t);
@@ -485,7 +487,9 @@ public final class Bootstrap {
                 daemon.stop();
             } else if (command.equals("start")) {
                 daemon.setAwait(true);
+//fixme 加载配置资源，通过反射调用catalina.load方法，利用catalina.load方法创建digester实例，从而解析conf/server.xml文件
                 daemon.load(args);
+                // FIXME: 运行各个组件，容器开始启动
                 daemon.start();
             } else if (command.equals("stop")) {
                 daemon.stopServer(args);

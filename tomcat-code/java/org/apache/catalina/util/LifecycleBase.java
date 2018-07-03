@@ -27,7 +27,7 @@ import org.apache.tomcat.util.ExceptionUtils;
 import org.apache.tomcat.util.res.StringManager;
 
 
-/**
+/**fixme 用于管理组件的生命周期和状态变化
  * Base implementation of the {@link Lifecycle} interface that implements the
  * state transition rules for {@link Lifecycle#start()} and
  * {@link Lifecycle#stop()}
@@ -90,15 +90,15 @@ public abstract class LifecycleBase implements Lifecycle {
         lifecycle.fireLifecycleEvent(type, data);
     }
 
-
+    // FIXME: 变更状态(通过事件变更)，进入子类initInternal()方法
     @Override
     public final synchronized void init() throws LifecycleException {
         if (!state.equals(LifecycleState.NEW)) {
             invalidTransition(Lifecycle.BEFORE_INIT_EVENT);
-        }
+        }//fixme 变更生命周期状态(通过事件变更)
         setStateInternal(LifecycleState.INITIALIZING, null, false);
 
-        try {
+        try {// fixme 进入子类的initInternal()方法
             initInternal();
         } catch (Throwable t) {
             ExceptionUtils.handleThrowable(t);

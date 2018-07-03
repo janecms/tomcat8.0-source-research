@@ -934,14 +934,15 @@ public class Connector extends LifecycleMBeanBase  {
         }
     }
 
-
+    // FIXME: 连接器初始化，创建CoyoteAdapter对象，具体协议类型初始化
     @Override
     protected void initInternal() throws LifecycleException {
 
         super.initInternal();
-
+        //fixme 该协议适配器会完成请求的真正处理
         // Initialize adapter
         adapter = new CoyoteAdapter(this);
+        //fixme 对于不同的协议类型，会有不同的ProtocolHandler实现类，如：Http11NioProtocol用来处理HTTP请求
         protocolHandler.setAdapter(adapter);
 
         // Make sure parseBodyMethodsSet has a default
@@ -955,7 +956,7 @@ public class Connector extends LifecycleMBeanBase  {
                     sm.getString("coyoteConnector.protocolHandlerNoApr",
                             getProtocolHandlerClassName()));
         }
-
+        // FIXME:  初始化具体协议类型，如Http11NioProtocol协议
         try {
             protocolHandler.init();
         } catch (Exception e) {

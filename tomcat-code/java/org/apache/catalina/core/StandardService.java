@@ -435,6 +435,8 @@ public class StandardService extends LifecycleMBeanBase implements Service {
 
         // Start our defined Container first
         if (container != null) {
+            // container:StandardEngine
+            // 逐一启动engine,host,context,warpper
             synchronized (container) {
                 container.start();
             }
@@ -536,7 +538,7 @@ public class StandardService extends LifecycleMBeanBase implements Service {
     }
 
 
-    /**
+    /**fixme 该方法初始化StandardEngine组件，Connector对象
      * Invoke a pre-startup initialization. This is used to allow connectors
      * to bind to restricted ports under Unix operating environments.
      */
@@ -546,6 +548,7 @@ public class StandardService extends LifecycleMBeanBase implements Service {
         super.initInternal();
 
         if (container != null) {
+            //fixme container：StandardEngine
             container.init();
         }
 
@@ -561,6 +564,7 @@ public class StandardService extends LifecycleMBeanBase implements Service {
         mapperListener.init();
 
         // Initialize our defined Connectors
+        //fixme   实例化组件集合,默认两个，对应server.xml的connector元素
         synchronized (connectorsLock) {
             for (Connector connector : connectors) {
                 try {

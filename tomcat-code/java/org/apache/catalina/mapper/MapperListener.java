@@ -88,7 +88,7 @@ public class MapperListener extends LifecycleMBeanBase
 
 
     // ------------------------------------------------------- Lifecycle Methods
-
+    //FIXME 添加engine、host、context、Wrapper到listers中
     @Override
     public void startInternal() throws LifecycleException {
 
