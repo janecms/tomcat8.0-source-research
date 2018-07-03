@@ -97,7 +97,7 @@ public class TextOptimizer {
             }
         }
 
-        /**
+        /**此方法断开连接模式。作为副作用，它将连接字符串复制到第一个文本节点<br/>
          * This method breaks concatenation mode.  As a side effect it copies
          * the concatenated string to the first text node
          */

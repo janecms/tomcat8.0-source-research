@@ -20,6 +20,7 @@ package org.apache.jasper.compiler;
 import org.apache.jasper.JasperException;
 
 /**
+ * 处理JSP解析和javac编译错误的接口<br/>
  * Interface for handling JSP parse and javac compilation errors.
  *
  * An implementation of this interface may be registered with the

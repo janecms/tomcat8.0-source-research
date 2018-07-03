@@ -222,7 +222,7 @@ public abstract class Compiler {
 
             // Collect page info
             Collector.collect(this, pageNodes);
-
+            log.info("Collect page info--- after");
             // Compile (if necessary) and load the tag files referenced in
             // this compilation unit.
             tfp = new TagFileProcessor();
@@ -323,7 +323,7 @@ public abstract class Compiler {
         compile(true);
     }
 
-    /**
+    /**从当前引擎上下文编译jsp文件。作为副作用，还会编译此页面引用的标记文件。<br/>
      * Compile the jsp file from the current engine context. As an side- effect,
      * tag files that are referenced by this page are also compiled.
      *

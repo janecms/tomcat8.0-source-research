@@ -32,6 +32,7 @@ import org.apache.jasper.Constants;
 import org.apache.jasper.JasperException;
 
 /**
+ * 有关翻译单元的各种信息的存储库<br/>
  * A repository for various info about the translation unit under compilation.
  *
  * @author Kin-man Chung

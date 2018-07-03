@@ -29,7 +29,7 @@ import org.apache.jasper.JasperException;
 
 class Collector {
 
-    /**
+    /**用于收集页面信息和自定义标签正文的访问者<br/>
      * A visitor for collecting information on the page and the body of
      * the custom tags.
      */

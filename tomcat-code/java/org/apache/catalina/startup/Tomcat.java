@@ -783,7 +783,7 @@ public class Tomcat {
                 ctx, "default", "org.apache.catalina.servlets.DefaultServlet");
         servlet.setLoadOnStartup(1);
         servlet.setOverridable(true);
-
+        //初始化jsp 引擎
         // JSP servlet (by class name - to avoid loading all deps)
         servlet = addServlet(
                 ctx, "jsp", "org.apache.jasper.servlet.JspServlet");

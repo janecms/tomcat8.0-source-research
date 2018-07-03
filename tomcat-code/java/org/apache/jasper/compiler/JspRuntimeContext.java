@@ -45,7 +45,7 @@ import org.apache.juli.logging.Log;
 import org.apache.juli.logging.LogFactory;
 
 
-/**
+/**用于跟踪JSP编译时文件依赖性的类。后台线程定期检查JSP页面所依赖的文件。如果依赖文件更改了包含它的JSP页面，则会重新编译。仅在Web应用程序上下文是目录时才使用。<br/>
  * Class for tracking JSP compile time file dependencies when the
  * &gt;%@include file="..."%&lt; directive is used.
  *

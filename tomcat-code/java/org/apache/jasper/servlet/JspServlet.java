@@ -44,7 +44,7 @@ import org.apache.juli.logging.Log;
 import org.apache.juli.logging.LogFactory;
 import org.apache.tomcat.PeriodicEventListener;
 
-/**
+/** servlet容器负责为正在使用Jasper的Web应用程序上下文提供URLClassLoader.Jasper将尝试为其ServletContext类加载器获取Tomcat ServletContext属性
  * The JSP engine (a.k.a Jasper).
  *
  * The servlet container is responsible for providing a
@@ -369,6 +369,15 @@ public class JspServlet extends HttpServlet implements PeriodicEventListener {
 
     // -------------------------------------------------------- Private Methods
 
+    /**
+     * 编译jsp入口
+     * @param request
+     * @param response
+     * @param jspUri
+     * @param precompile
+     * @throws ServletException
+     * @throws IOException
+     */
     private void serviceJspFile(HttpServletRequest request,
                                 HttpServletResponse response, String jspUri,
                                 boolean precompile)

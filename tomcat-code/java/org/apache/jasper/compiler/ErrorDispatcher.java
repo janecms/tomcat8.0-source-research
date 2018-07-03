@@ -26,7 +26,7 @@ import org.apache.jasper.JasperException;
 import org.apache.jasper.JspCompilationContext;
 import org.xml.sax.SAXException;
 
-/**
+/**负责将JSP解析和javac编译错误分派给已配置的错误处理程序的类<br/>
  * Class responsible for dispatching JSP parse and javac compilation errors
  * to the configured error handler.
  *

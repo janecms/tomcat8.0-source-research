@@ -659,7 +659,7 @@ class Generator {
         generateDestroy();
     }
 
-    /**
+    /**生成前言
      * Generates the beginning of the static portion of the servlet.
      */
     private void generatePreamble(Node.Nodes page) throws JasperException {
@@ -3557,7 +3557,7 @@ class Generator {
 
     /**
      * The main entry for Generator.
-     *
+     *生成主入口
      * @param out
      *            The servlet output writer
      * @param compiler

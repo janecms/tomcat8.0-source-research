@@ -40,9 +40,11 @@ import javax.servlet.jsp.tagext.VariableInfo;
 import org.apache.jasper.Constants;
 import org.apache.jasper.JasperException;
 import org.apache.jasper.compiler.tagplugin.TagPluginContext;
+import org.apache.juli.logging.Log;
+import org.apache.juli.logging.LogFactory;
 import org.xml.sax.Attributes;
 
-/**
+/**JSP页面或JSP文档（XML）的内部数据表示形式。此处还包括遍历节点的访问者类。<br/>
  * An internal data representation of a JSP page or a JSP document (XML). Also
  * included here is a visitor class for traversing nodes.
  *
@@ -366,7 +368,7 @@ abstract class Node implements TagConstants {
         innerClassName = icn;
     }
 
-    /**
+    /**根据节点类型选择并调用访问者类中的方法。这是抽象的，应该被扩展类覆盖<br/>
      * Selects and invokes a method in the visitor class based on the node type.
      * This is abstract and should be overrode by the extending classes.
      *
@@ -2321,11 +2323,12 @@ abstract class Node implements TagConstants {
     }
 
     /**
+     * Node的有序列表，用于表示元素的主体或jsp文档的jsp页面
      * An ordered list of Node, used to represent the body of an element, or a
      * jsp page of jsp document.
      */
     public static class Nodes {
-
+        private final Log log = LogFactory.getLog(Nodes.class);
         private final List<Node> list;
 
         private Node.Root root; // null if this is not a page
@@ -2371,10 +2374,13 @@ abstract class Node implements TagConstants {
          */
         public void visit(Visitor v) throws JasperException {
             Iterator<Node> iter = list.iterator();
+            log.info("--------------------------start visit:"+v.getClass());
             while (iter.hasNext()) {
                 Node n = iter.next();
+                log.info("1:visit:"+n.getClass()+" ->"+v.getClass());
                 n.accept(v);
             }
+            log.info("-------------------------end visit:"+v.getClass());
         }
 
         public int size() {
@@ -2403,7 +2409,7 @@ abstract class Node implements TagConstants {
         }
     }
 
-    /**
+    /**访问节点的访问者类。该类还为节点的每个子类提供默认操作（即nop）<br/>
      * A visitor class for visiting the node. This class also provides the
      * default action (i.e. nop) for each of the child class of the Node. An
      * actual visitor should extend this class and supply the visit method for
@@ -2411,7 +2417,7 @@ abstract class Node implements TagConstants {
      */
     public static class Visitor {
 
-        /**
+        /**此方法提供了放置所有节点共有的操作的位置。如果需要的话，在子访问者类中覆盖它。<br/>
          * This method provides a place to put actions that are common to all
          * nodes. Override this in the child visitor class if need to.
          */

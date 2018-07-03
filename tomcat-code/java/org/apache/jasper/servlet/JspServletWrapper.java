@@ -49,7 +49,9 @@ import org.apache.juli.logging.LogFactory;
 import org.apache.tomcat.InstanceManager;
 import org.apache.tomcat.util.scan.Jar;
 
-/**
+/**servlet容器负责为正在使用Jasper的Web应用程序上下文提供URLClassLoader.Jasper
+ * 将尝试为其ServletContext类加载器获取Tomcat ServletContext属性，
+ * 如果失败，则使用父类加载器。在任何一种情况下，它必须是URLClassLoader<br/>
  * The JSP engine (a.k.a Jasper).
  *
  * The servlet container is responsible for providing a

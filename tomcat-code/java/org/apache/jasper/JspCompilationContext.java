@@ -42,7 +42,7 @@ import org.apache.juli.logging.LogFactory;
 import org.apache.tomcat.util.descriptor.tld.TldResourcePath;
 import org.apache.tomcat.util.scan.Jar;
 
-/**
+/**在JSP引擎中使用的各种东西的占位符。这是一个按请求/每上下文的数据结构<br/>
  * A place holder for various things that are used through out the JSP
  * engine. This is a per-request/per-context data structure. Some of
  * the instance variables are set at different points.

@@ -19,6 +19,7 @@
   <head><title>Bug 49726 test case</title></head>
   <body>
     <p>OK</p>
+  <jsp:text>test_1</jsp:text>
   </body>
 </html>
 

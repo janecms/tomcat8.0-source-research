@@ -98,3 +98,25 @@ variable
 解析完上面的5个指令后，会生成一个Node.Nodes，
 然后通过Validator类的validateDirectives方法验证所有指令是否正确，
 第一次解析的结果将存放到PageInfo中(一个PageInfo与一个jsp文件相关)
+
+1.
+org.apache.jasper.compiler.ParserController
+用于解析JSP页面的控制器,转换为Node.Nodes
+2.
+org.apache.jasper.compiler.AntCompiler
+    主JSP编译器类。该类使用Ant进行编译
+3. 
+org.apache.jasper.compiler.Generator
+从节点生成Java源代码
+
+4.Node.Nodes
+Node的有序列表，用于表示元素的主体或jsp文档的jsp页面
+
+5.
+org.apache.jasper.compiler.Node
+JSP页面或JSP文档（XML）的内部数据表示形式
+
+6.
+org.apache.jasper.compiler.Node.Visitor
+访问节点的访问者类。
+
