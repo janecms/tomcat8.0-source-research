@@ -1200,7 +1200,7 @@ public class CoyoteAdapter implements Adapter {
                         SessionTrackingMode.COOKIE)) {
             return;
         }
-
+        //从cookie中获取sessionId
         // Parse session id from cookies
         ServerCookies serverCookies = request.getServerCookies();
         int count = serverCookies.getCookieCount();

@@ -35,7 +35,7 @@ import org.apache.tomcat.util.buf.MessageBytes;
 import org.apache.tomcat.util.log.UserDataHelper;
 import org.apache.tomcat.util.res.StringManager;
 
-/**
+/**基于RFC6265，RFC2109和RFC2616的遗留（直到早期的Tomcat 8版本）cookie解析器。这个类不是线程安全的。
  * The legacy (up to early Tomcat 8 releases) cookie parser based on RFC6265,
  * RFC2109 and RFC2616.
  *

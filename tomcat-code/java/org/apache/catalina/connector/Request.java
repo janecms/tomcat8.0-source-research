@@ -2897,7 +2897,7 @@ public class Request
             Cookie cookie =
                 ApplicationSessionCookieConfig.createSessionCookie(
                         context, session.getIdInternal(), isSecure());
-
+            //设置Header
             response.addSessionCookieInternal(cookie);
         }
 

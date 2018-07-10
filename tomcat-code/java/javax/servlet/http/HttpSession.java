@@ -20,7 +20,9 @@ import java.util.Enumeration;
 
 import javax.servlet.ServletContext;
 
-/**
+/**提供一种在多个页面请求中识别用户或访问网站并存储有关该用户的信息的方法。
+ * servlet容器使用此接口在HTTP客户端和HTTP服务器之间创建会话。会话在指定的时间段内持续存在，来自用户的多个连接或页面请求。
+ * 会话通常对应于一个可能多次访问网站的用户。服务器可以通过多种方式维护会话，例如使用cookie或重写URL。<br/>
  * Provides a way to identify a user across more than one page request or visit
  * to a Web site and to store information about that user.
  * <p>

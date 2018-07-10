@@ -83,7 +83,7 @@ public abstract class ManagerBase extends LifecycleMBeanBase
     private static final String name = "ManagerBase";
 
 
-    /**
+    /** 30分钟
      * The default maximum inactive interval for Sessions created by
      * this Manager.
      */
