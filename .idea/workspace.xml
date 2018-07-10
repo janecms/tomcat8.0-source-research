@@ -2,25 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02e419ff-0674-489b-b620-5b662e6f12be" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-doc/01 startup/01Bootstrap分析.md" afterPath="$PROJECT_DIR$/my-doc/01 startup/01Bootstrap分析.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-doc/01 startup/03 组件生命周期事件模型.md" afterPath="$PROJECT_DIR$/my-doc/01 startup/03 组件生命周期事件模型.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-doc/03SESSION/03 session实现原理.java" afterPath="$PROJECT_DIR$/my-doc/03SESSION/03 session实现原理.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-doc/05Request/Connector初始化和启动.md" afterPath="$PROJECT_DIR$/my-doc/05Request/Connector初始化和启动.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/ha/session/DeltaSession.java" afterPath="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/ha/session/DeltaSession.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat-code/java/javax/servlet/http/HttpSession.java" afterPath="$PROJECT_DIR$/tomcat-code/java/javax/servlet/http/HttpSession.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/connector/CoyoteAdapter.java" afterPath="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/connector/CoyoteAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/connector/Request.java" afterPath="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/connector/Request.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/ManagerBase.java" afterPath="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/ManagerBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/StandardManager.java" afterPath="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/StandardManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/StandardSession.java" afterPath="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/StandardSession.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat-code/java/org/apache/tomcat/util/http/LegacyCookieProcessor.java" afterPath="$PROJECT_DIR$/tomcat-code/java/org/apache/tomcat/util/http/LegacyCookieProcessor.java" />
     </list>
-    <list id="81c65770-6368-4b46-bb96-3685f141604a" name="ide" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list id="81c65770-6368-4b46-bb96-3685f141604a" name="ide" comment="" />
     <ignored path="tomcat-study.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/tomcat-code/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,27 +35,122 @@
     <favorites_list name="tomcat-study" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Request.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/connector/Request.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="2831" column="34" lean-forward="false" selection-start-line="2831" selection-start-column="22" selection-end-line="2831" selection-end-column="34" />
+              <folding>
+                <element signature="e#60194#60195#0" expanded="true" />
+                <element signature="e#60235#60236#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Session.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/Session.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="268" column="16" lean-forward="false" selection-start-line="268" selection-start-column="16" selection-end-line="268" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StandardSession.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/StandardSession.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="731" column="16" lean-forward="false" selection-start-line="731" selection-start-column="16" selection-end-line="731" selection-end-column="16" />
+              <folding>
+                <element signature="initializer##0;class#StandardSession#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoyoteAdapter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/connector/CoyoteAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="511" column="21" lean-forward="true" selection-start-line="511" selection-start-column="16" selection-end-line="511" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Request.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/coyote/Request.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="569" column="20" lean-forward="false" selection-start-line="569" selection-start-column="20" selection-end-line="569" selection-end-column="20" />
+              <folding>
+                <element signature="e#15411#15412#0" expanded="true" />
+                <element signature="e#15448#15449#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageBytes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/tomcat/util/buf/MessageBytes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="48" column="28" lean-forward="false" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Adapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/coyote/Adapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerCookie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/tomcat/util/http/ServerCookie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpServletRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tomcat-code/java/javax/servlet/http/HttpServletRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rfc6265CookieProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/tomcat/util/http/Rfc6265CookieProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindBugs-IDEA-Workspace">
     <toolWindowEditorPreview>false</toolWindowEditorPreview>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>main</find>
-      <find>createStartDigester</find>
-      <find>loca</find>
-      <find>load(</find>
-      <find>catalinaDaemon</find>
-      <find>init(</find>
-      <find>initInternal</find>
-      <find>initIN</find>
-      <find>initi</find>
-      <find>init（）</find>
-      <find>init</find>
-      <find>endpoint</find>
-      <find>endpoint.init()</find>
-      <find>endpoint.</find>
       <find>getMaxConnections</find>
       <find>getMaxThreadsInternal</find>
       <find>getMaxThreadsI</find>
@@ -78,6 +167,20 @@
       <find>setDistributable</find>
       <find>getRandomBytes</find>
       <find>dolo</find>
+      <find>isRequestedSessionIdFromCookie</find>
+      <find>createSession</find>
+      <find>TooManyActiveSessionsException</find>
+      <find>sessionId</find>
+      <find>addSessionCookieInternal</find>
+      <find>parseCookieHeader</find>
+      <find>requestSessionId</find>
+      <find>doGetSession</find>
+      <find>requestsess</find>
+      <find>requestedSessionId</find>
+      <find>setrequestedSessionId</find>
+      <find>postParseRequset</find>
+      <find>session.a</find>
+      <find>processor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,18 +199,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/core/StandardHostValve.java" />
-        <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/core/StandardWrapperValve.java" />
         <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/core/ApplicationFilterChain.java" />
         <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/servlets/DefaultServlet.java" />
         <option value="$PROJECT_DIR$/tomcat-code/java/javax/servlet/http/HttpServletRequest.java" />
         <option value="$PROJECT_DIR$/tomcat-code/test/org/apache/catalina/connector/TestCoyoteAdapter.java" />
         <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/util/SessionConfig.java" />
-        <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/connector/CoyoteAdapter.java" />
         <option value="$PROJECT_DIR$/tomcat-code/test/org/apache/catalina/connector/TestCoyoteOutputStream.java" />
         <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/connector/CoyoteOutputStream.java" />
         <option value="$PROJECT_DIR$/tomcat-code/java/javax/servlet/WriteListener.java" />
-        <option value="$PROJECT_DIR$/tomcat-code/java/javax/servlet/http/HttpSession.java" />
         <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/PersistentManagerBase.java" />
         <option value="$PROJECT_DIR$/tomcat-code/test/org/apache/catalina/session/TestPersistentManager.java" />
         <option value="$PROJECT_DIR$/tomcat-code/test/org/apache/catalina/session/TestStandardSession.java" />
@@ -144,9 +243,13 @@
         <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/ha/session/DeltaSession.java" />
         <option value="$PROJECT_DIR$/my-doc/03SESSION/03 session实现原理.java" />
         <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/Manager.java" />
-        <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/ManagerBase.java" />
         <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/StandardManager.java" />
         <option value="$PROJECT_DIR$/my-doc/05Request/Connector初始化和启动.md" />
+        <option value="$PROJECT_DIR$/tomcat-code/java/javax/servlet/http/HttpSession.java" />
+        <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/ManagerBase.java" />
+        <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/connector/Request.java" />
+        <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/tomcat/util/http/LegacyCookieProcessor.java" />
+        <option value="$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/connector/CoyoteAdapter.java" />
       </list>
     </option>
   </component>
@@ -261,6 +364,116 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tomcat8.0-source-research" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat-study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat8.0-source-research" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat-code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat-study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat8.0-source-research" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat-code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat-study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat8.0-source-research" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat-code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat-study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat8.0-source-research" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat-code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat-study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat8.0-source-research" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tomcat-code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="http" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1036,7 +1249,7 @@
       <workItem from="1530581124959" duration="1897000" />
       <workItem from="1530587915748" duration="3798000" />
       <workItem from="1530665408386" duration="4891000" />
-      <workItem from="1531184280201" duration="18000" />
+      <workItem from="1531184280201" duration="1687000" />
     </task>
     <task id="LOCAL-00001" summary="delete svn">
       <created>1530340889619</created>
@@ -1101,7 +1314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530590520457</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="session">
+      <created>1531184317063</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1531184317063</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1137,7 +1357,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110027000" />
+    <option name="totallyTimeSpent" value="111696000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1161,6 +1381,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39939487" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21406959" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1171,25 +1392,24 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="95" y="95" width="1176" height="538" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43278688" sideWeight="0.87367624" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62786883" sideWeight="0.657082" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14754099" sideWeight="0.53177005" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33442622" sideWeight="0.53177005" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6988543" sideWeight="0.5030257" order="15" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2708018" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2708018" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08396369" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6819672" sideWeight="0.4924357" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="95" y="95" width="1176" height="538" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1245,7 +1465,8 @@
     <MESSAGE value="session 的持久化" />
     <MESSAGE value="JSP 编译" />
     <MESSAGE value="初始化&amp;启动流程" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化&amp;启动流程" />
+    <MESSAGE value="session" />
+    <option name="LAST_COMMIT_MESSAGE" value="session" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1316,474 +1537,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/jasper/compiler/ParserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="91" column="21" lean-forward="false" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/jasper/compiler/AntCompiler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="47" column="36" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/jasper/compiler/Compiler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3268">
-          <caret line="209" column="33" lean-forward="false" selection-start-line="209" selection-start-column="33" selection-end-line="209" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/jasper/compiler/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2983">
-          <caret line="208" column="44" lean-forward="false" selection-start-line="208" selection-start-column="44" selection-end-line="208" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/jasper/compiler/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12046">
-          <caret line="2411" column="17" lean-forward="false" selection-start-line="2411" selection-start-column="7" selection-end-line="2411" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#76964#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-            <element signature="docComment;method#Node#2;class#Node#0" expanded="false" />
-            <element signature="docComment;method#Node#3;class#Node#0" expanded="false" />
-            <element signature="e#5831#5832#0" expanded="false" />
-            <element signature="e#5864#5865#0" expanded="false" />
-            <element signature="e#5900#5901#0" expanded="false" />
-            <element signature="e#5937#5938#0" expanded="false" />
-            <element signature="e#6295#6296#0" expanded="false" />
-            <element signature="e#6328#6329#0" expanded="false" />
-            <element signature="e#6518#6519#0" expanded="false" />
-            <element signature="e#6557#6558#0" expanded="false" />
-            <element signature="e#6762#6763#0" expanded="false" />
-            <element signature="e#6809#6810#0" expanded="false" />
-            <element signature="e#6860#6861#0" expanded="false" />
-            <element signature="e#6894#6895#0" expanded="false" />
-            <element signature="e#6946#6947#0" expanded="false" />
-            <element signature="e#7014#7015#0" expanded="false" />
-            <element signature="method#getTextAttribute#0;class#Node#0" expanded="false" />
-            <element signature="method#getNamedAttributeNode#0;class#Node#0" expanded="false" />
-            <element signature="method#getNamedAttributeNodes#0;class#Node#0" expanded="false" />
-            <element signature="e#9830#9831#0" expanded="false" />
-            <element signature="e#9857#9858#0" expanded="false" />
-            <element signature="e#9896#9897#0" expanded="false" />
-            <element signature="e#9928#9929#0" expanded="false" />
-            <element signature="e#9959#9960#0" expanded="false" />
-            <element signature="e#9986#9987#0" expanded="false" />
-            <element signature="e#10016#10017#0" expanded="false" />
-            <element signature="e#10048#10049#0" expanded="false" />
-            <element signature="e#10079#10080#0" expanded="false" />
-            <element signature="e#10108#10109#0" expanded="false" />
-            <element signature="e#10145#10146#0" expanded="false" />
-            <element signature="e#10181#10182#0" expanded="false" />
-            <element signature="e#10228#10229#0" expanded="false" />
-            <element signature="e#10265#10266#0" expanded="false" />
-            <element signature="e#10300#10301#0" expanded="false" />
-            <element signature="e#10334#10335#0" expanded="false" />
-            <element signature="e#10377#10378#0" expanded="false" />
-            <element signature="e#10410#10411#0" expanded="false" />
-            <element signature="e#10629#10630#0" expanded="false" />
-            <element signature="e#10666#10667#0" expanded="false" />
-            <element signature="e#10715#10716#0" expanded="false" />
-            <element signature="e#10751#10752#0" expanded="false" />
-            <element signature="class#Root#0;class#Node#0" expanded="false" />
-            <element signature="e#13967#13968#0" expanded="false" />
-            <element signature="e#14009#14010#0" expanded="false" />
-            <element signature="e#14225#14226#0" expanded="false" />
-            <element signature="e#14271#14272#0" expanded="false" />
-            <element signature="e#14479#14480#0" expanded="false" />
-            <element signature="e#14526#14527#0" expanded="false" />
-            <element signature="e#14577#14578#0" expanded="false" />
-            <element signature="e#14614#14615#0" expanded="false" />
-            <element signature="e#14657#14658#0" expanded="false" />
-            <element signature="e#14695#14696#0" expanded="false" />
-            <element signature="e#14762#14763#0" expanded="false" />
-            <element signature="e#14819#14820#0" expanded="false" />
-            <element signature="e#14869#14870#0" expanded="false" />
-            <element signature="e#14921#14922#0" expanded="false" />
-            <element signature="e#14996#14997#0" expanded="false" />
-            <element signature="e#15061#15062#0" expanded="false" />
-            <element signature="e#15117#15118#0" expanded="false" />
-            <element signature="e#15175#15176#0" expanded="false" />
-            <element signature="e#15229#15230#0" expanded="false" />
-            <element signature="e#15273#15274#0" expanded="false" />
-            <element signature="e#15314#15315#0" expanded="false" />
-            <element signature="e#15357#15358#0" expanded="false" />
-            <element signature="class#PageDirective#0;class#Node#0" expanded="false" />
-            <element signature="e#17939#17940#0" expanded="false" />
-            <element signature="e#17977#17978#0" expanded="false" />
-            <element signature="class#IncludeDirective#0;class#Node#0" expanded="false" />
-            <element signature="class#TaglibDirective#0;class#Node#0" expanded="false" />
-            <element signature="class#TagDirective#0;class#Node#0" expanded="false" />
-            <element signature="e#21430#21431#0" expanded="false" />
-            <element signature="e#21468#21469#0" expanded="false" />
-            <element signature="class#DoBodyAction#0;class#Node#0" expanded="false" />
-            <element signature="e#24579#24580#0" expanded="false" />
-            <element signature="e#24641#24642#0" expanded="false" />
-            <element signature="class#ScriptingElement#0;class#Node#0" expanded="false" />
-            <element signature="class#Declaration#0;class#Node#0" expanded="false" />
-            <element signature="class#ELExpression#0;class#Node#0" expanded="false" />
-            <element signature="e#29452#29453#0" expanded="false" />
-            <element signature="e#29488#29489#0" expanded="false" />
-            <element signature="e#29527#29528#0" expanded="false" />
-            <element signature="e#29560#29561#0" expanded="false" />
-            <element signature="e#29593#29594#0" expanded="false" />
-            <element signature="e#29633#29634#0" expanded="false" />
-            <element signature="class#ParamAction#0;class#Node#0" expanded="false" />
-            <element signature="e#30402#30403#0" expanded="false" />
-            <element signature="e#30444#30445#0" expanded="false" />
-            <element signature="e#30486#30487#0" expanded="false" />
-            <element signature="e#30522#30523#0" expanded="false" />
-            <element signature="e#30687#30688#0" expanded="false" />
-            <element signature="e#30761#30762#0" expanded="false" />
-            <element signature="class#FallBackAction#0;class#Node#0" expanded="false" />
-            <element signature="e#31319#31320#0" expanded="false" />
-            <element signature="e#31395#31396#0" expanded="false" />
-            <element signature="method#IncludeAction#0;class#IncludeAction#0;class#Node#0" expanded="false" />
-            <element signature="method#IncludeAction#1;class#IncludeAction#0;class#Node#0" expanded="false" />
-            <element signature="e#32565#32566#0" expanded="false" />
-            <element signature="e#32605#32606#0" expanded="false" />
-            <element signature="e#32646#32647#0" expanded="false" />
-            <element signature="e#32681#32682#0" expanded="false" />
-            <element signature="class#ForwardAction#0;class#Node#0" expanded="false" />
-            <element signature="e#33459#33460#0" expanded="false" />
-            <element signature="e#33499#33500#0" expanded="false" />
-            <element signature="e#33540#33541#0" expanded="false" />
-            <element signature="e#33575#33576#0" expanded="false" />
-            <element signature="class#GetProperty#0;class#Node#0" expanded="false" />
-            <element signature="class#SetProperty#0;class#Node#0" expanded="false" />
-            <element signature="e#35064#35065#0" expanded="false" />
-            <element signature="e#35106#35107#0" expanded="false" />
-            <element signature="e#35148#35149#0" expanded="false" />
-            <element signature="e#35184#35185#0" expanded="false" />
-            <element signature="class#UseBean#0;class#Node#0" expanded="false" />
-            <element signature="e#35958#35959#0" expanded="false" />
-            <element signature="e#36006#36007#0" expanded="false" />
-            <element signature="e#36051#36052#0" expanded="false" />
-            <element signature="e#36090#36091#0" expanded="false" />
-            <element signature="class#PlugIn#0;class#Node#0" expanded="false" />
-            <element signature="e#36887#36888#0" expanded="false" />
-            <element signature="e#36931#36932#0" expanded="false" />
-            <element signature="e#36983#36984#0" expanded="false" />
-            <element signature="e#37025#37026#0" expanded="false" />
-            <element signature="e#37068#37069#0" expanded="false" />
-            <element signature="e#37105#37106#0" expanded="false" />
-            <element signature="e#37147#37148#0" expanded="false" />
-            <element signature="e#37183#37184#0" expanded="false" />
-            <element signature="class#UninterpretedTag#0;class#Node#0" expanded="false" />
-            <element signature="e#37869#37870#0" expanded="false" />
-            <element signature="e#37917#37918#0" expanded="false" />
-            <element signature="e#37969#37970#0" expanded="false" />
-            <element signature="e#38008#38009#0" expanded="false" />
-            <element signature="class#JspElement#0;class#Node#0" expanded="false" />
-            <element signature="e#38838#38839#0" expanded="false" />
-            <element signature="e#38886#38887#0" expanded="false" />
-            <element signature="e#38938#38939#0" expanded="false" />
-            <element signature="e#38977#38978#0" expanded="false" />
-            <element signature="e#39110#39111#0" expanded="false" />
-            <element signature="e#39158#39159#0" expanded="false" />
-            <element signature="e#39278#39279#0" expanded="false" />
-            <element signature="e#39322#39323#0" expanded="false" />
-            <element signature="class#JspOutput#0;class#Node#0" expanded="false" />
-            <element signature="class#ChildInfo#0;class#Node#0" expanded="false" />
-            <element signature="e#40427#40428#0" expanded="false" />
-            <element signature="e#40465#40466#0" expanded="false" />
-            <element signature="e#40506#40507#0" expanded="false" />
-            <element signature="e#40547#40548#0" expanded="false" />
-            <element signature="e#40595#40596#0" expanded="false" />
-            <element signature="e#40633#40634#0" expanded="false" />
-            <element signature="e#40672#40673#0" expanded="false" />
-            <element signature="e#40713#40714#0" expanded="false" />
-            <element signature="e#40767#40768#0" expanded="false" />
-            <element signature="e#40811#40812#0" expanded="false" />
-            <element signature="e#40856#40857#0" expanded="false" />
-            <element signature="e#40903#40904#0" expanded="false" />
-            <element signature="e#40955#40956#0" expanded="false" />
-            <element signature="e#40997#40998#0" expanded="false" />
-            <element signature="e#41040#41041#0" expanded="false" />
-            <element signature="e#41085#41086#0" expanded="false" />
-            <element signature="e#41137#41138#0" expanded="false" />
-            <element signature="e#41179#41180#0" expanded="false" />
-            <element signature="e#41222#41223#0" expanded="false" />
-            <element signature="e#41267#41268#0" expanded="false" />
-            <element signature="e#41321#41322#0" expanded="false" />
-            <element signature="e#41365#41366#0" expanded="false" />
-            <element signature="e#41410#41411#0" expanded="false" />
-            <element signature="e#41457#41458#0" expanded="false" />
-            <element signature="class#CustomTag#0;class#Node#0" expanded="false" />
-            <element signature="e#46715#46716#0" expanded="false" />
-            <element signature="e#46754#46755#0" expanded="false" />
-            <element signature="e#46849#46850#0" expanded="false" />
-            <element signature="e#46886#46887#0" expanded="false" />
-            <element signature="e#46951#46952#0" expanded="false" />
-            <element signature="e#46999#47000#0" expanded="false" />
-            <element signature="e#47051#47052#0" expanded="false" />
-            <element signature="e#47090#47091#0" expanded="false" />
-            <element signature="e#47133#47134#0" expanded="false" />
-            <element signature="e#47173#47174#0" expanded="false" />
-            <element signature="e#47478#47479#0" expanded="false" />
-            <element signature="e#47516#47517#0" expanded="false" />
-            <element signature="e#47571#47572#0" expanded="false" />
-            <element signature="e#47617#47618#0" expanded="false" />
-            <element signature="e#47666#47667#0" expanded="false" />
-            <element signature="e#47715#47716#0" expanded="false" />
-            <element signature="e#47754#47755#0" expanded="false" />
-            <element signature="e#47792#47793#0" expanded="false" />
-            <element signature="e#47839#47840#0" expanded="false" />
-            <element signature="e#47881#47882#0" expanded="false" />
-            <element signature="e#48043#48044#0" expanded="false" />
-            <element signature="e#48093#48094#0" expanded="false" />
-            <element signature="e#48141#48142#0" expanded="false" />
-            <element signature="e#48187#48188#0" expanded="false" />
-            <element signature="e#48242#48243#0" expanded="false" />
-            <element signature="e#48286#48287#0" expanded="false" />
-            <element signature="e#48337#48338#0" expanded="false" />
-            <element signature="e#48390#48391#0" expanded="false" />
-            <element signature="e#48436#48437#0" expanded="false" />
-            <element signature="e#48484#48485#0" expanded="false" />
-            <element signature="e#48538#48539#0" expanded="false" />
-            <element signature="e#48594#48595#0" expanded="false" />
-            <element signature="e#48646#48647#0" expanded="false" />
-            <element signature="e#48700#48701#0" expanded="false" />
-            <element signature="e#48748#48749#0" expanded="false" />
-            <element signature="e#48798#48799#0" expanded="false" />
-            <element signature="e#48854#48855#0" expanded="false" />
-            <element signature="e#48912#48913#0" expanded="false" />
-            <element signature="e#48970#48971#0" expanded="false" />
-            <element signature="e#49030#49031#0" expanded="false" />
-            <element signature="e#49082#49083#0" expanded="false" />
-            <element signature="e#49121#49122#0" expanded="false" />
-            <element signature="e#49181#49182#0" expanded="false" />
-            <element signature="e#49229#49230#0" expanded="false" />
-            <element signature="e#49283#49284#0" expanded="false" />
-            <element signature="e#49334#49335#0" expanded="false" />
-            <element signature="e#49384#49385#0" expanded="false" />
-            <element signature="e#49429#49430#0" expanded="false" />
-            <element signature="e#49469#49470#0" expanded="false" />
-            <element signature="e#49513#49514#0" expanded="false" />
-            <element signature="e#50803#50804#0" expanded="false" />
-            <element signature="e#50852#50853#0" expanded="false" />
-            <element signature="e#51502#51503#0" expanded="false" />
-            <element signature="e#51544#51545#0" expanded="false" />
-            <element signature="e#51585#51586#0" expanded="false" />
-            <element signature="e#51628#51629#0" expanded="false" />
-            <element signature="e#51706#51707#0" expanded="false" />
-            <element signature="e#51770#51771#0" expanded="false" />
-            <element signature="e#51827#51828#0" expanded="false" />
-            <element signature="e#51874#51875#0" expanded="false" />
-            <element signature="e#51919#51920#0" expanded="false" />
-            <element signature="e#51956#51957#0" expanded="false" />
-            <element signature="e#51992#51993#0" expanded="false" />
-            <element signature="e#52029#52030#0" expanded="false" />
-            <element signature="e#52074#52075#0" expanded="false" />
-            <element signature="e#52111#52112#0" expanded="false" />
-            <element signature="e#52147#52148#0" expanded="false" />
-            <element signature="e#52184#52185#0" expanded="false" />
-            <element signature="class#AttributeGenerator#0;class#Node#0" expanded="false" />
-            <element signature="e#54781#54782#0" expanded="false" />
-            <element signature="e#54816#54817#0" expanded="false" />
-            <element signature="e#54853#54854#0" expanded="false" />
-            <element signature="e#54887#54888#0" expanded="false" />
-            <element signature="class#JspText#0;class#Node#0" expanded="false" />
-            <element signature="class#NamedAttribute#0;class#Node#0" expanded="false" />
-            <element signature="e#57317#57318#0" expanded="false" />
-            <element signature="e#57357#57358#0" expanded="false" />
-            <element signature="e#57415#57416#0" expanded="false" />
-            <element signature="e#57460#57461#0" expanded="false" />
-            <element signature="e#57497#57498#0" expanded="false" />
-            <element signature="e#57539#57540#0" expanded="false" />
-            <element signature="e#57582#57583#0" expanded="false" />
-            <element signature="e#57627#57628#0" expanded="false" />
-            <element signature="e#57662#57663#0" expanded="false" />
-            <element signature="e#57697#57698#0" expanded="false" />
-            <element signature="e#57747#57748#0" expanded="false" />
-            <element signature="e#57787#57788#0" expanded="false" />
-            <element signature="e#57828#57829#0" expanded="false" />
-            <element signature="e#57863#57864#0" expanded="false" />
-            <element signature="e#58777#58778#0" expanded="false" />
-            <element signature="e#58842#58843#0" expanded="false" />
-            <element signature="e#58890#58891#0" expanded="false" />
-            <element signature="e#58946#58947#0" expanded="false" />
-            <element signature="class#JspBody#0;class#Node#0" expanded="false" />
-            <element signature="e#59752#59753#0" expanded="false" />
-            <element signature="e#59824#59825#0" expanded="false" />
-            <element signature="e#60293#60294#0" expanded="false" />
-            <element signature="e#60333#60334#0" expanded="false" />
-            <element signature="class#TemplateText#0;class#Node#0" expanded="false" />
-            <element signature="e#60572#60573#0" expanded="false" />
-            <element signature="e#60634#60635#0" expanded="false" />
-            <element signature="e#61113#61114#0" expanded="false" />
-            <element signature="e#61153#61154#0" expanded="false" />
-            <element signature="e#62501#62502#0" expanded="false" />
-            <element signature="e#62541#62542#0" expanded="false" />
-            <element signature="class#JspAttribute#0;class#Node#0" expanded="false" />
-            <element signature="e#65249#65250#0" expanded="false" />
-            <element signature="e#65285#65286#0" expanded="false" />
-            <element signature="e#65400#65401#0" expanded="false" />
-            <element signature="e#65440#65441#0" expanded="false" />
-            <element signature="e#65604#65605#0" expanded="false" />
-            <element signature="e#65638#65639#0" expanded="false" />
-            <element signature="e#65695#65696#0" expanded="false" />
-            <element signature="e#65734#65735#0" expanded="false" />
-            <element signature="e#65935#65936#0" expanded="false" />
-            <element signature="e#66021#66022#0" expanded="false" />
-            <element signature="e#66229#66230#0" expanded="false" />
-            <element signature="e#66316#66317#0" expanded="false" />
-            <element signature="e#68089#68090#0" expanded="false" />
-            <element signature="e#68125#68126#0" expanded="false" />
-            <element signature="e#68346#68347#0" expanded="false" />
-            <element signature="e#68395#68396#0" expanded="false" />
-            <element signature="e#68534#68535#0" expanded="false" />
-            <element signature="e#68575#68576#0" expanded="false" />
-            <element signature="e#68716#68717#0" expanded="false" />
-            <element signature="e#68761#68762#0" expanded="false" />
-            <element signature="e#69374#69375#0" expanded="false" />
-            <element signature="e#69451#69452#0" expanded="false" />
-            <element signature="e#69734#69735#0" expanded="false" />
-            <element signature="e#69772#69773#0" expanded="false" />
-            <element signature="e#69811#69812#0" expanded="false" />
-            <element signature="e#69844#69845#0" expanded="false" />
-            <element signature="e#70286#70287#0" expanded="false" />
-            <element signature="e#70331#70332#0" expanded="false" />
-            <element signature="e#70887#70888#0" expanded="false" />
-            <element signature="e#70925#70926#0" expanded="false" />
-            <element signature="e#71576#71577#0" expanded="false" />
-            <element signature="e#71618#71619#0" expanded="false" />
-            <element signature="e#71883#71884#0" expanded="false" />
-            <element signature="e#71918#71919#0" expanded="false" />
-            <element signature="e#71966#71967#0" expanded="false" />
-            <element signature="e#72014#72015#0" expanded="false" />
-            <element signature="e#72069#72070#0" expanded="false" />
-            <element signature="e#72114#72115#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-doc/02JSP/JSP编译过程.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2280">
-            <caret line="120" column="10" lean-forward="false" selection-start-line="120" selection-start-column="10" selection-end-line="120" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/jasper/servlet/JspServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5434">
-          <caret line="339" column="26" lean-forward="false" selection-start-line="339" selection-start-column="12" selection-end-line="339" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/javax/servlet/http/HttpServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11210">
-          <caret line="621" column="33" lean-forward="false" selection-start-line="621" selection-start-column="33" selection-end-line="621" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#32558#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#8396#8397#0" expanded="false" />
-            <element signature="e#8421#8422#0" expanded="false" />
-            <element signature="e#31495#31496#0" expanded="false" />
-            <element signature="e#31531#31532#0" expanded="false" />
-            <element signature="e#31577#31578#0" expanded="false" />
-            <element signature="e#31608#31609#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/javax/servlet/descriptor/TaglibDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/javax/servlet/jsp/tagext/BodyContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="80" column="15" lean-forward="false" selection-start-line="80" selection-start-column="15" selection-end-line="80" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/util/LifecycleSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/tomcat/util/net/JIoEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="392" column="16" lean-forward="false" selection-start-line="392" selection-start-column="16" selection-end-line="392" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/coyote/http11/Http11NioProtocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/coyote/http11/AbstractHttp11JsseProtocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/coyote/ProtocolHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/tomcat/util/net/AprEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="661" column="31" lean-forward="false" selection-start-line="661" selection-start-column="25" selection-end-line="661" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/coyote/http11/Http11Processor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="109" column="48" lean-forward="false" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/tomcat/util/net/Nio2Endpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="274" column="12" lean-forward="false" selection-start-line="274" selection-start-column="12" selection-end-line="274" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/Lifecycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="260" column="16" lean-forward="false" selection-start-line="260" selection-start-column="16" selection-end-line="260" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/core/ContainerBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-434">
-          <caret line="894" column="32" lean-forward="false" selection-start-line="894" selection-start-column="32" selection-end-line="894" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/core/StandardEngine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -1803,6 +1556,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10051">
           <caret line="566" column="10" lean-forward="false" selection-start-line="566" selection-start-column="10" selection-end-line="566" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1817,6 +1571,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6764">
           <caret line="421" column="22" lean-forward="false" selection-start-line="421" selection-start-column="22" selection-end-line="421" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1832,6 +1587,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6802">
           <caret line="396" column="21" lean-forward="false" selection-start-line="396" selection-start-column="16" selection-end-line="396" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#27094#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1839,6 +1597,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3135">
           <caret line="183" column="21" lean-forward="false" selection-start-line="183" selection-start-column="16" selection-end-line="183" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1846,6 +1605,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9025">
           <caret line="491" column="19" lean-forward="false" selection-start-line="491" selection-start-column="19" selection-end-line="491" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#19323#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1853,6 +1615,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11191">
           <caret line="657" column="3" lean-forward="false" selection-start-line="657" selection-start-column="3" selection-end-line="657" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1906,6 +1669,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
           <caret line="51" column="49" lean-forward="false" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1933,13 +1697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="99" column="32" lean-forward="false" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/core/StandardContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1954,6 +1711,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="1234" column="33" lean-forward="false" selection-start-line="1234" selection-start-column="17" selection-end-line="1234" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1961,13 +1719,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="53" column="19" lean-forward="false" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/ManagerBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="579" column="0" lean-forward="true" selection-start-line="579" selection-start-column="0" selection-end-line="579" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1975,6 +1727,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1989,13 +1742,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="193" column="32" lean-forward="false" selection-start-line="193" selection-start-column="32" selection-end-line="193" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/StandardSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="1095" column="16" lean-forward="false" selection-start-line="1095" selection-start-column="16" selection-end-line="1095" selection-end-column="16" />
+          <folding>
+            <element signature="e#5261#5262#0" expanded="false" />
+            <element signature="e#5299#5300#0" expanded="false" />
+            <element signature="e#5673#5674#0" expanded="false" />
+            <element signature="e#5723#5724#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2003,6 +1755,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
           <caret line="260" column="48" lean-forward="true" selection-start-line="260" selection-start-column="48" selection-end-line="260" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#18372#0" expanded="false" />
+            <element signature="class#PrivilegedDoUnload#0;class#StandardManager#0" expanded="false" />
+            <element signature="method#setPathname#0;class#StandardManager#0" expanded="false" />
+            <element signature="method#unload#0;class#StandardManager#0" expanded="false" />
+            <element signature="method#doUnload#0;class#StandardManager#0" expanded="false" />
+            <element signature="method#stopInternal#0;class#StandardManager#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2013,6 +1773,204 @@
             <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/javax/servlet/http/HttpSessionEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/javax/servlet/http/HttpSessionBindingEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="34" column="51" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/javax/servlet/http/HttpSessionBindingListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/javax/servlet/http/HttpSessionActivationListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/javax/servlet/ServletContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="818" column="68" lean-forward="false" selection-start-line="818" selection-start-column="36" selection-end-line="818" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/core/ApplicationSessionCookieConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="161" column="25" lean-forward="false" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/javax/servlet/http/HttpSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/TooManyActiveSessionsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#1905#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="332" column="19" lean-forward="false" selection-start-line="332" selection-start-column="19" selection-end-line="332" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/ManagerBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="87" column="20" lean-forward="true" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+          <folding>
+            <element signature="method#processExpires#0;class#ManagerBase#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/connector/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="920" column="16" lean-forward="false" selection-start-line="920" selection-start-column="16" selection-end-line="920" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/tomcat/util/http/CookieProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/tomcat/util/http/LegacyCookieProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="44" column="23" lean-forward="true" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/tomcat/util/http/Rfc6265CookieProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/javax/servlet/http/HttpServletRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/tomcat/util/http/ServerCookie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/coyote/Adapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/tomcat/util/buf/MessageBytes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="48" column="28" lean-forward="false" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/session/StandardSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="731" column="16" lean-forward="false" selection-start-line="731" selection-start-column="16" selection-end-line="731" selection-end-column="16" />
+          <folding>
+            <element signature="initializer##0;class#StandardSession#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="268" column="16" lean-forward="false" selection-start-line="268" selection-start-column="16" selection-end-line="268" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/connector/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="2831" column="34" lean-forward="false" selection-start-line="2831" selection-start-column="22" selection-end-line="2831" selection-end-column="34" />
+          <folding>
+            <element signature="e#60194#60195#0" expanded="true" />
+            <element signature="e#60235#60236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/coyote/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="569" column="20" lean-forward="false" selection-start-line="569" selection-start-column="20" selection-end-line="569" selection-end-column="20" />
+          <folding>
+            <element signature="e#15411#15412#0" expanded="true" />
+            <element signature="e#15448#15449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat-code/java/org/apache/catalina/connector/CoyoteAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="511" column="21" lean-forward="true" selection-start-line="511" selection-start-column="16" selection-end-line="511" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
