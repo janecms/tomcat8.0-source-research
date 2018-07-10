@@ -195,10 +195,10 @@ public class StandardManager extends ManagerBase {
         if (log.isDebugEnabled())
             log.debug("Start: Loading persisted sessions");
 
-        // Initialize our internal data structures
+        // Initialize our internal data structures fixme 清空sessions缓存维护的Session信息
         sessions.clear();
 
-        // Open an input stream to the specified pathname, if any
+        // Open an input stream to the specified pathname, if any fixme 调用file方法返回当前Context下的Session持久化文件
         File file = file();
         if (file == null)
             return;
@@ -220,7 +220,7 @@ public class StandardManager extends ManagerBase {
             if (classLoader != null) {
                 if (log.isDebugEnabled())
                     log.debug("Creating custom object input stream for class loader ");
-                ois = new CustomObjectInputStream(bis, classLoader);
+                ois = new CustomObjectInputStream(bis, classLoader);//fixme 封装为CustomObjectInputStream；
             } else {
                 if (log.isDebugEnabled())
                     log.debug("Creating standard object input stream");
@@ -252,7 +252,7 @@ public class StandardManager extends ManagerBase {
         // Load the previously unloaded active sessions
         synchronized (sessions) {
             try {
-                Integer count = (Integer) ois.readObject();
+                Integer count = (Integer) ois.readObject();// FIXME: 2018/7/4 从Session持久化文件读入持久化的Session的数量，然后逐个读取Session信息并放入sessions缓存中。
                 int n = count.intValue();
                 if (log.isDebugEnabled())
                     log.debug("Loading " + n + " persisted sessions");

@@ -45,7 +45,7 @@ import org.apache.catalina.tribes.tipis.ReplicatedMapEntry;
 import org.apache.tomcat.util.res.StringManager;
 
 /**
- *
+ *对会话中增量修改的属性进行同步。这种方式由于是增量的，所以会大大降低网络I/O的开销，但是实现上会比较复杂因为涉及到对会话属性操作过程的管理。
  * Similar to the StandardSession except that this session will keep
  * track of deltas during a request.
  */

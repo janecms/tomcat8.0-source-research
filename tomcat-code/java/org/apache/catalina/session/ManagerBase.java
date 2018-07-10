@@ -582,7 +582,7 @@ public abstract class ManagerBase extends LifecycleMBeanBase
     protected void initInternal() throws LifecycleException {
 
         super.initInternal();
-
+        // FIXME: 2018/7/4 从父容器StandardContext中获取当前Tomcat是否是集群部署，并设置为ManagerBase的布尔属性distributable；
         setDistributable(getContext().getDistributable());
     }
 

@@ -58,7 +58,7 @@ import org.apache.catalina.security.SecurityUtil;
 import org.apache.tomcat.util.ExceptionUtils;
 import org.apache.tomcat.util.res.StringManager;
 
-/**
+/**标准的HTTP Session实现
  * Standard implementation of the <b>Session</b> interface.  This object is
  * serializable, so that it can be stored in persistent storage or transferred
  * to a different JVM for distributable session support.

@@ -1,4 +1,9 @@
 ## Connector
+### Connector的实现分为以下几种
+- Http Connector：基于HTTP协议，负责建立HTTP连接。它又分为BIO Http Connector（是Tomcat的默认Connector）与NIO Http Connector两种，后者提供对非阻塞IO与长连接Comet的支持。
+- AJP Connector：基于AJP协议，AJP是专门设计用于Tomcat与HTTP服务器通信定制的协议，能提供较高的通信速度和效率。如与Apache服务器集成时，采用这个协议。
+- APR HTTP Connector：用C实现，通过JNI调用的。主要提升对静态资源（如HTML、图片、CSS、JS等）的访问性能。现在这个库已独立出来可用在任何项目中。APR性能较前两类有很大提升。
+
 主要解决的问题就是Socket的接收，为了能够很好的处理各种协议和并发异步接收，Connector加入了两个组件 ProtocolHandler和EndPoint。
 org.apache.catalina.connector.Connector.startInternal
    -> org.apache.coyote.http11.Http11NioProtocol.start
